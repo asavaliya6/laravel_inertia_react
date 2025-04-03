@@ -10,9 +10,6 @@ use Illuminate\Support\Facades\Log;
 
 class StudentController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index(Student $model)
     {
         return Inertia::render('StudentsDashboard', [
@@ -21,17 +18,10 @@ class StudentController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         $request->validate([
@@ -46,25 +36,14 @@ class StudentController extends Controller
         return redirect()->route('studentsdashboard.index')->with('message', 'Student added successfully');
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(Student $student)
     {
-        //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(Student $student)
     {
-        //
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, $student_id)
     {
         Log::info('Update request received for student ID: ' . $student_id);
@@ -83,9 +62,6 @@ class StudentController extends Controller
         return redirect()->route('studentsdashboard.index')->with('success', 'Student updated successfully.');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy($student_id)
     {
         $student = Student::findOrFail($student_id);

@@ -28,10 +28,9 @@ export default function StudentsDashboard({ auth, studentsData, count }) {
                             <AddStudentButton className="float-end" />
                         </div>
                         <table className="table">
-                            {/* head */}
                             <thead className="text-black">
                                 <tr>
-                                    <th>#</th>
+                                    <th>ID</th>
                                     <th>Name</th>
                                     <th>Department</th>
                                     <th>Email</th>
@@ -59,7 +58,6 @@ export default function StudentsDashboard({ auth, studentsData, count }) {
                                         <td>{s.department}</td>
                                         <td>{s.email}</td>
                                         <th className="flex gap-3">
-                                            {/* Modal */}
                                             <ModalUpdate
                                                 id={`my_modal_3${s.student_id}`}
                                                 s={s}

@@ -40,7 +40,6 @@ export default function ModalDelete({ id, s }) {
                 <div className="modal-box bg-slate-50">
                     <div className="modal-header">
                         <form method="dialog">
-                            {/* if there is a button in form, it will close the modal */}
                             <button
                                 className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
                                 onClick={() => reset()}
@@ -71,7 +70,6 @@ export default function ModalDelete({ id, s }) {
                     </div>
                     <div className="modal-action">
                         <form method="dialog">
-                            {/* if there is a button in form, it will close the modal */}
                             <button
                                 className="btn text-black border-0 bg-gray-300 hover:bg-gray-400"
                                 onClick={() => reset()}

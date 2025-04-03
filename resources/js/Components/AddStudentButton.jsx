@@ -41,7 +41,6 @@ export default function AddStudentButton({ className = "", disabled }) {
                 <div className="modal-box bg-slate-50">
                     <div className="modal-header">
                         <form method="dialog">
-                            {/* if there is a button in form, it will close the modal */}
                             <button
                                 className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
                                 onClick={() => reset()}
@@ -53,7 +52,6 @@ export default function AddStudentButton({ className = "", disabled }) {
                     <div className="modal-body">
                         <h3 className="font-bold text-lg">Add New Student</h3>
                         <form onSubmit={submit} className="mt-6 space-y-6">
-                            {/* First Name */}
                             <div>
                                 <InputLabel
                                     htmlFor="first_name"
@@ -78,7 +76,6 @@ export default function AddStudentButton({ className = "", disabled }) {
                                 />
                             </div>
 
-                            {/* Last Name */}
                             <div>
                                 <InputLabel
                                     htmlFor="last_name"
@@ -103,7 +100,6 @@ export default function AddStudentButton({ className = "", disabled }) {
                                 />
                             </div>
 
-                            {/* Department */}
                             <div>
                                 <InputLabel
                                     htmlFor="department"
@@ -128,7 +124,6 @@ export default function AddStudentButton({ className = "", disabled }) {
                                 />
                             </div>
 
-                            {/* Email */}
                             <div>
                                 <InputLabel htmlFor="email" value="Email" />
 
@@ -162,7 +157,6 @@ export default function AddStudentButton({ className = "", disabled }) {
                     </div>
                     <div className="modal-action">
                         <form method="dialog">
-                            {/* if there is a button in form, it will close the modal */}
                             <button
                                 className="btn text-black border-0 bg-gray-300 hover:bg-gray-400"
                                 onClick={() => reset()}
